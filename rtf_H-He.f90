@@ -395,7 +395,7 @@ CONTAINS
     h           = (z - zo) / REAL(n_steps, dp)
     tauThom_val = 0.0D0
 
-    DO i = 0, n_steps - 1
+    DO i = 0, n_steps
       x = zo + REAL(i, dp) * h
 
       ! HeI neutral fraction via tanh model linked to xHI
@@ -445,7 +445,7 @@ CONTAINS
     h          = (z - zo) / REAL(n_steps, dp)
     taucHI_val = 0.0D0
 
-    DO i = 0, n_steps - 1
+    DO i = 0, n_steps
       x       = zo + REAL(i, dp) * h
       xHI_val = xHI(x)
 
@@ -483,7 +483,7 @@ CONTAINS
     h             = (z - zo) / REAL(n_steps, dp)
     taucHeII_val  = 0.0D0
 
-    DO i = 0, n_steps - 1
+    DO i = 0, n_steps
       x = zo + REAL(i, dp) * h
 
       ! Compute HeII fraction at this redshift
@@ -522,7 +522,7 @@ CONTAINS
     h            = (z - zo) / REAL(n_steps, dp)
     taucHeI_val  = 0.0D0
 
-    DO i = 0, n_steps - 1
+    DO i = 0, n_steps
       x = zo + REAL(i, dp) * h
 
       ! HeI neutral fraction
